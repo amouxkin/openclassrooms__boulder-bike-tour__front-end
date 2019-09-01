@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  node:
+    image: node_f
+    container_name: react_dev
+    environment:
+      - GIT_EMAIL=${GIT_EMAIL}
+      - GIT_USERNAME=${GIT_USERNAME}
+    entrypoint: sh
+    ports:
+      - 3003:3000
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/home/boulder-bike-tour/
+    working_dir: /home/boulder-bike-tour/
+    command: startup_script.sh
