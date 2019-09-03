@@ -6,10 +6,12 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
+import 'normalize.css';
+import Home from '../components/Home';
 
 export default () =>
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={home} />
+      <Route exact path="/" component={Home} />
     </Switch>
   </BrowserRouter>;
