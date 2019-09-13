@@ -7,7 +7,7 @@ import {
   Redirect
 } from "react-router-dom";
 import 'normalize.css';
-import Home from '../components/Home';
+import Home from '../components/home/home';
 
 export default () =>
   <BrowserRouter>

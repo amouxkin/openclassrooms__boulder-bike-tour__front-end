@@ -7,6 +7,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop -p 3000 -H 0.0.0.0",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -14,6 +16,8 @@
   },
   "dependencies": {
     "gatsby": "^2.13.73",
+    "gatsby-plugin-minify-classnames": "^0.1.2",
+    "gatsby-plugin-postcss": "^2.1.7",
     "gatsby-plugin-sass": "^2.1.13",
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
@@ -22,7 +26,12 @@
     "react-router-dom": "^5.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
     "prettier": "^1.18.2",
+    "react-styleguidist": "^9.1.16",
+    "sass-loader": "^8.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
   },
